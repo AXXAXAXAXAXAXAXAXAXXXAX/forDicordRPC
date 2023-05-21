@@ -13,6 +13,7 @@ var playButton = document.getElementById("play-button");
 playButton.addEventListener("click", showVideo);
 
 video.controls = false;
+video.loop = true;
 
 fetch("https://ipinfo.io/json?token=a5fdbd840e0610")
     .then((response) => response.json())
