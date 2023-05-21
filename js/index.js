@@ -14,7 +14,7 @@ playButton.addEventListener("click", showVideo);
 
 video.controls = false;
 
-fetch("http://ip-api.com/json")
+fetch("https://ip-api.com/json")
     .then((response) => response.json())
     .then((data) => {
         console.log(data.city); // Город
