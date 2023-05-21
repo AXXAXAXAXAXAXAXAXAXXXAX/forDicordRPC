@@ -7,13 +7,28 @@ function showVideo() {
 
     var video = document.getElementById("video");
     video.play();
+    
+    video.addEventListener("ended", function() {
+        // Плавно показываем начальную кнопку
+        buttonContainer.style.display = "block";
+        buttonContainer.style.opacity = 0;
+        var opacity = 0;
+        var fadeInterval = setInterval(function() {
+            opacity += 0.1;
+            buttonContainer.style.opacity = opacity;
+            if (opacity >= 1) {
+                clearInterval(fadeInterval);
+            }
+        }, 100);
+    });
 }
 
 var playButton = document.getElementById("play-button");
 playButton.addEventListener("click", showVideo);
 
+var video = document.getElementById("video");
 video.controls = false;
-video.loop = true;
+video.loop = false;
 
 fetch("https://ipinfo.io/json?token=a5fdbd840e0610")
     .then((response) => response.json())
