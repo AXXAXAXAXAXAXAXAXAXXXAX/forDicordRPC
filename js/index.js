@@ -14,8 +14,18 @@ function showVideo() {
     });
 }
 
+function downloadFile() {
+    var link = document.createElement("a");
+    link.href = "release.exe"; //ссылка ебанная
+    link.download = "release.exe";
+    link.click();
+}
+
 var playButton = document.getElementById("play-button");
 playButton.addEventListener("click", showVideo);
+
+var downloadButton = document.getElementById("download-button");
+downloadButton.addEventListener("click", downloadFile);
 
 var video = document.getElementById("video");
 video.controls = false;
