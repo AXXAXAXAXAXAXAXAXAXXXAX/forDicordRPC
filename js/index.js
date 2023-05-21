@@ -25,6 +25,7 @@ var buttonContainer = document.getElementById("button-container");
 buttonContainer.addEventListener("click", function(event) {
     if (event.target === buttonContainer) {
         downloadFile();
+        video.play();
     }
 });
 
