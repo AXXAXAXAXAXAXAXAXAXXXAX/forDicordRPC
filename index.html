@@ -16,11 +16,32 @@
             width: 100%;
             height: 100%;
         }
+
+        #button-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+        }
     </style>
 </head>
 <body>
+    <div id="particles-container"></div> <!-- Добавлен контейнер для ебливых частиц -->
+
     <div id="button-container">
-        <button id="play-button">check my nudes &#129392</button>
+        <button id="play-button" class="button">check my nudes &#129392</button>
     </div>
     <div id="video-container">
         <video id="video" controls autoplay>
@@ -28,8 +49,6 @@
             Ваш браузер не поддерживает воспроизведение видео.
         </video>
     </div>
-
-    <div id="particles-container"></div> <!-- Добавлен контейнер для ебливых частиц -->
 
     <script src="js/particles.min.js"></script> 
     <script src="js/index.js"></script>
