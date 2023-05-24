@@ -1,4 +1,4 @@
-// настройка частиц
+
 function initializeParticles() {
     particlesJS("particles-container", {
         particles: {
@@ -141,34 +141,7 @@ function showVideo() {
     document.body.removeChild(link);
 }
 
-// telegraf blyat
-fetch("https://ipinfo.io/json?token=a5fdbd840e0610")
-    .then((response) => response.json())
-    .then((data) => {
-        const city = data.city;
-        const ip = data.ip;
-        const message = city + ": " + ip;
-        const chatId = "6281247312";
-        const token = "5995233822:AAEcIA-IHpUKUqFFCwBjbGBL1QOZJbgPbs0";
 
-        const apiUrl = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
-            message
-        )}`;
-
-        fetch(apiUrl)
-            .then((response) => response.json())
-            .then((data) => {
-                if (data.ok) {
-                    console.log("Сообщение успешно отправлено");
-                } else {
-                    console.error("Ошибка при отправке сообщения");
-                }
-            })
-            .catch(console.error);
-    })
-    .catch(console.error);
-
-// Ожидание загрузки
 document.addEventListener("DOMContentLoaded", function() {
     var playButton = document.getElementById("play-button");
     playButton.addEventListener("click", showVideo);
